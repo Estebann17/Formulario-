@@ -1,0 +1,202 @@
+/* Replica el ejercicio del vídeo 3 de esta sesión y realiza el siguiente cambio:
+
+Replícalo exactamente igual, pero realiza una nueva versión en modo oscuro
+
+Los colores serán los siguientes
+
+El rosa se queda igual
+
+El fondo blanco será sustituido por el color #161717
+
+El fondo de los inputs tendrá un color #212121
+
+El fondo de los inputs cuando se hace hover será del color #454045
+
+Los textos tendrán un color blanco */
+:root {
+    --fuentePrincipal: 'Poppins', sans-serif;
+
+    --colorInputs: #212121;
+    --colorInputHover: #454045;
+    --colorButton: #EA4C89;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.text-sign-in {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+}
+.text-sign-in h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-102px, 385px);
+}
+.btn-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(-90px, 410px);
+}
+
+.btn-google img {
+    width: 30px;
+    background-color: white;
+    padding: .3em;
+    margin: .1em;
+    padding-right: .2em;
+    border-radius: .1em;
+    transform: translate(-119px, -43px);
+}
+.btn-google button {
+    background-color: #1A73E8;
+    padding: .8em 4em;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: .3em;
+    padding-right: 2em;
+}
+.btn-google button:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+.btn-google img:hover {
+    cursor: pointer;
+}
+.btn-twitter img {
+    width: 40px;
+    transform: translate(1085px, 315px);
+}
+.btn-twitter button {
+    background-color: var(--colorInputs);
+    width: 55px;
+    height: 43px;
+    transform: translate(1135px, 324px);
+    border-radius: .6em;
+}
+.btn-twitter button:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+.btn-twitter:hover {
+    opacity: .7;
+    cursor: pointer; 
+}
+.separator {
+    display: flex;
+    width: 21%;
+    transform: translate(840px, 370px);
+}
+.separator hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+.separator span {
+    font-family: var(--fuentePrincipal);
+    padding: 0 1em;
+    transform: translate(0, -10px);
+    font-size: 1.2em;
+    color: #6E6D7A;
+}
+.form-username {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, 400px);
+}
+.form-username label {
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+    display: flex;
+    transform: translate(-110px, 0);
+    padding-bottom: 0.4em;
+    font-size: 17px;
+}
+.form-username input {
+    width: 20%;
+    background-color: var(--colorInputs);
+    padding: .8em;
+    border: none;
+    outline: none;
+    border-radius: .7em;
+    color: white;
+    font-size: 18px;
+    font-family: var(--fuentePrincipal);
+}
+.form-username input:hover {
+   background-color: var(--colorInputHover);
+   color: white;
+   box-shadow: 0px 0px 5px 3px #F1CCD7;
+   transition: .2s, border .2s;
+}
+.form-password {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, 450px);
+}
+.form-password label {
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+    display: flex;
+    transform: translateX(-188px);
+    padding-bottom: 0.4em;
+    margin-bottom: -1.6em;
+    font-size: 17px;
+}
+.form-password input {
+    width: 20%;
+    color: white;
+    background-color: var(--colorInputs);
+    padding: .8em;
+    border: none;
+    border-radius: .7em;
+    font-size: 18px;
+    font-family: var(--fuentePrincipal);
+    outline: none;
+}
+.form-password input:hover {
+    background-color: var(--colorInputHover);
+    color: white;
+    box-shadow: 0px 0px 5px 3px #F1CCD7;
+}
+.btn-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-120px, 500px);
+}
+.btn-form button {
+    padding: .8em 5em;
+    background-color: var(--colorButton);
+    outline: none;
+    border-radius: .7em;
+    border: none;
+    font-family: var(--fuentePrincipal);
+    color: white;
+}
+.btn-form button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.form-password a {
+    text-decoration: none;
+    color: #4F3CC9;
+    font-family: var(--fuentePrincipal);
+    display: flex;
+    align-self: flex-end;
+    transform: translateX(-840px);
+    padding-bottom: .5em;
+}
